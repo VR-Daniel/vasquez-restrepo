@@ -167,7 +167,7 @@
   .profile-socials a:hover { color:var(--accent-bright); }
   .profile-email {
     text-align:center; margin-top:1rem;
-    font-size:0.82rem; color:var(--text-secondary); letter-spacing:0.03em;
+    font-size:0.95rem; color:var(--text-secondary); letter-spacing:0.03em;
   }
 
   /* Footer social icons */
@@ -183,7 +183,7 @@
   .about-text .orcid { font-size:0.85rem; color:var(--accent); margin-bottom:1rem; display:flex; align-items:center; gap:0.4rem; }
   .about-text .orcid a { color:var(--accent); text-decoration:none; }
   .about-text .orcid a:hover { color:var(--accent-bright); }
-  .about-text .bio { color:var(--text-secondary); font-size:1.02rem; margin-bottom:1rem; }
+  .about-text .bio { color:var(--text-secondary); font-size:1.08rem; margin-bottom:1rem; }
   .about-text .bio a { color:var(--accent); text-decoration:none; }
   .cv-btn {
     display:inline-flex; align-items:center; gap:0.5rem;
@@ -207,7 +207,7 @@
     color:var(--accent); margin-bottom:0.5rem;
   }
   .section-title {
-    font-family:var(--serif); font-size:clamp(1.6rem,3.5vw,2.4rem); font-weight:400;
+    font-family:var(--serif); font-size:clamp(1.8rem,4vw,2.8rem); font-weight:400;
     color:var(--white); line-height:1.25;
   }
   .map-edu-grid {
@@ -256,8 +256,8 @@
     background:#242422; border-left-color:var(--accent-bright);
     box-shadow:0 0 20px rgba(212,173,66,0.08);
   }
-  .edu-item .degree { font-size:0.95rem; font-weight:500; color:var(--text-primary); }
-  .edu-item .school { font-size:0.88rem; color:var(--text-secondary); margin-top:0.1rem; }
+  .edu-item .degree { font-size:1.02rem; font-weight:500; color:var(--text-primary); }
+  .edu-item .school { font-size:0.95rem; color:var(--text-secondary); margin-top:0.1rem; }
   .edu-item .years { font-size:0.78rem; color:var(--accent); letter-spacing:0.05em; margin-top:0.15rem; }
   .edu-item .groups { font-size:0.75rem; color:var(--text-muted); margin-top:0.3rem; font-style:italic; }
 
@@ -340,13 +340,13 @@
   .access-legend-item .access-icon { margin-right:0; }
   .access-legend-item .access-note { font-size:0.8rem; color:var(--text-muted); }
   .pub-title-text {
-    font-family:var(--serif); font-size:1.1rem; font-weight:500;
+    font-family:var(--serif); font-size:1.12rem; font-weight:500;
     color:var(--white); line-height:1.4; margin-bottom:0.2rem;
   }
-  .pub-journal { font-size:0.88rem; font-style:italic; color:var(--text-muted); }
+  .pub-journal { font-size:0.95rem; font-style:italic; color:var(--text-muted); }
   .pub-links { margin-top:0.4rem; display:flex; gap:0.7rem; flex-wrap:wrap; }
   .pub-links a {
-    font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase;
+    font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase;
     color:var(--accent); text-decoration:none; padding:0.15rem 0.45rem;
     border:1px solid var(--border); border-radius:2px; transition:all 0.2s;
   }
@@ -382,7 +382,7 @@
     color:var(--white); margin-bottom:0.3rem; line-height:1.3;
   }
   .teaching-institution {
-    font-size:0.88rem; color:var(--text-secondary); margin-bottom:0.6rem;
+    font-size:0.95rem; color:var(--text-secondary); margin-bottom:0.6rem;
   }
   .teaching-meta {
     display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.7rem;
@@ -395,7 +395,7 @@
   .teaching-tag.level { background:rgba(212,173,66,0.07); color:var(--text-secondary); border:1px solid var(--border); }
   .teaching-tag.dedication { background:rgba(212,173,66,0.07); color:var(--text-muted); border:1px solid var(--border); }
   .teaching-responsibilities {
-    font-size:0.88rem; color:var(--text-secondary); line-height:1.6;
+    font-size:0.95rem; color:var(--text-secondary); line-height:1.6;
   }
 
   /* Testimonials carousel */
@@ -430,7 +430,7 @@
     line-height:1; opacity:0.5;
   }
   .testimonial-quote {
-    font-size:0.9rem; color:var(--text-secondary); line-height:1.65;
+    font-size:0.98rem; color:var(--text-secondary); line-height:1.65;
     font-style:italic; padding-top:1.2rem;
   }
   .testimonial-course {
@@ -495,7 +495,7 @@
     color:var(--white); margin-bottom:0.4rem; line-height:1.3;
   }
   .tutorial-desc {
-    font-size:0.85rem; color:var(--text-secondary); line-height:1.6;
+    font-size:0.95rem; color:var(--text-secondary); line-height:1.7;
     margin-bottom:0.7rem;
   }
   .tutorial-desc a { color:var(--accent); text-decoration:none; }
@@ -516,13 +516,174 @@
   .tutorial-lang.es { background:rgba(143,170,123,0.15); color:#a8c494; }
   .tutorial-lang.en { background:rgba(212,173,66,0.14); color:var(--accent-bright); }
 
+  /* ===== BLOG PAGE ===== */
+  .blog-content {
+    max-width:1000px; margin:0 auto;
+    padding: clamp(2rem,5vw,4rem) clamp(1.5rem,5vw,4rem);
+  }
+  .blog-filters {
+    display:flex; justify-content:center; gap:0.5rem; flex-wrap:wrap; margin-bottom:1.5rem;
+  }
+  .blog-filter-btn {
+    padding:0.25rem 0.6rem; border-radius:3px; border:1px solid rgba(143,170,123,0.2);
+    background:transparent; color:var(--text-secondary); font-family:var(--sans);
+    font-size:0.75rem; font-weight:400; letter-spacing:0.03em; cursor:pointer;
+    transition:all 0.3s;
+  }
+  .blog-filter-btn:hover { border-color:rgba(143,170,123,0.5); color:#a8c494; }
+  .blog-filter-btn.active {
+    background:rgba(143,170,123,0.15); color:#a8c494; border-color:rgba(143,170,123,0.4);
+    font-weight:500;
+  }
+  .blog-grid {
+    display:grid; grid-template-columns:1fr; gap:1.2rem;
+  }
+  .blog-card {
+    background:var(--bg-card); border:1px solid var(--border); border-radius:6px;
+    padding:1.4rem 1.5rem; cursor:pointer; transition:all 0.3s;
+    display:grid; grid-template-columns:1fr auto; gap:1rem; align-items:start;
+  }
+  .blog-card:hover {
+    border-color:var(--accent-dim); box-shadow:0 4px 20px rgba(0,0,0,0.3);
+    transform:translateY(-2px);
+  }
+  .blog-card-body { min-width:0; }
+  .blog-card-date {
+    font-size:0.75rem; color:var(--accent); letter-spacing:0.05em; margin-bottom:0.3rem;
+  }
+  .blog-card-title {
+    font-family:var(--serif); font-size:1.15rem; font-weight:500;
+    color:var(--white); line-height:1.3; margin-bottom:0.4rem;
+  }
+  .blog-card-summary {
+    font-size:0.95rem; color:var(--text-secondary); line-height:1.6;
+    margin-bottom:0.6rem;
+  }
+  .blog-card-tags { display:flex; gap:0.3rem; flex-wrap:wrap; }
+  .blog-tag {
+    font-size:0.65rem; font-weight:500; letter-spacing:0.06em;
+    padding:0.12rem 0.45rem; border-radius:3px;
+    background:rgba(143,170,123,0.12); color:#a8c494;
+  }
+  .blog-card-arrow {
+    color:var(--text-muted); font-size:1.2rem; align-self:center;
+    transition:color 0.3s, transform 0.3s;
+  }
+  .blog-card:hover .blog-card-arrow { color:var(--accent-bright); transform:translateX(3px); }
+  .blog-no-posts {
+    text-align:center; padding:3rem 1rem; color:var(--text-muted); font-size:1rem;
+    display:none;
+  }
+
+  /* Blog post reader */
+  .blog-reader { display:none; }
+  .blog-reader.active { display:block; }
+  .blog-reader-back {
+    display:inline-flex; align-items:center; gap:0.4rem;
+    font-size:0.85rem; color:var(--accent); cursor:pointer;
+    margin-bottom:1.5rem; transition:color 0.3s; border:none; background:none;
+    font-family:var(--sans);
+  }
+  .blog-reader-back:hover { color:var(--accent-bright); }
+  .blog-reader-meta {
+    margin-bottom:2rem; padding-bottom:1rem; border-bottom:1px solid var(--border);
+  }
+  .blog-reader-title {
+    font-family:var(--serif); font-size:clamp(1.6rem,3.5vw,2.2rem);
+    font-weight:500; color:var(--white); line-height:1.25; margin-bottom:0.5rem;
+  }
+  .blog-reader-date { font-size:0.88rem; color:var(--accent); margin-bottom:0.5rem; }
+  .blog-reader-tags { display:flex; gap:0.3rem; flex-wrap:wrap; }
+  .blog-reader-content {
+    font-size:1.08rem; color:var(--text-primary); line-height:1.9;
+  }
+  .blog-reader-content h1, .blog-reader-content h2, .blog-reader-content h3 {
+    font-family:var(--serif); color:var(--white); margin:1.5rem 0 0.8rem; font-weight:500;
+  }
+  .blog-reader-content h1 { font-size:1.6rem; }
+  .blog-reader-content h2 { font-size:1.35rem; color:var(--accent-bright); }
+  .blog-reader-content h3 { font-size:1.15rem; }
+  .blog-reader-content p { margin-bottom:1rem; }
+  .blog-reader-content a { color:var(--accent); text-decoration:none; }
+  .blog-reader-content a:hover { color:var(--accent-bright); text-decoration:underline; }
+  .blog-reader-content code {
+    background:rgba(212,173,66,0.08); padding:0.15rem 0.4rem; border-radius:3px;
+    font-size:0.9em; color:var(--accent-bright);
+  }
+  .blog-reader-content pre {
+    background:var(--bg-map); border:1px solid var(--border); border-radius:6px;
+    padding:1rem 1.2rem; overflow-x:auto; margin:1rem 0;
+  }
+  .blog-reader-content pre code { background:none; padding:0; color:var(--text-primary); }
+  .blog-reader-content blockquote {
+    border-left:3px solid var(--accent-dim); padding-left:1rem;
+    color:var(--text-muted); font-style:italic; margin:1rem 0;
+  }
+  .blog-reader-content img { max-width:100%; border-radius:6px; margin:1rem 0; }
+  .blog-reader-content ul, .blog-reader-content ol { padding-left:1.5rem; margin-bottom:1rem; }
+  .blog-reader-content li { margin-bottom:0.4rem; }
+
+
+  /* Like & Share */
+  .blog-like-section {
+    display:flex; align-items:center; gap:0.6rem; margin-top:2.5rem;
+    padding-top:2rem; border-top:1px solid var(--border); flex-wrap:wrap;
+  }
+  .blog-like-text { font-size:0.95rem; color:var(--text-secondary); margin-right:0.3rem; }
+  .blog-like-btn {
+    display:flex; align-items:center; gap:0.5rem;
+    background:none; border:1px solid var(--border); border-radius:30px;
+    padding:0.45rem 1rem; cursor:pointer; transition:all 0.3s;
+    font-family:var(--sans); font-size:0.95rem; color:var(--text-secondary);
+  }
+  .blog-like-btn:hover { border-color:rgba(220,80,80,0.4); color:#e06060; }
+  .blog-like-btn.liked { border-color:rgba(220,80,80,0.5); color:#e06060; }
+  .blog-like-btn .heart-icon { display:flex; transition:transform 0.3s; }
+  .blog-like-btn .heart-icon svg { width:18px; height:18px; fill:currentColor; }
+  .blog-like-btn:hover .heart-icon { transform:scale(1.1); }
+  .blog-like-btn.liked .heart-icon { transform:scale(1.15); }
+  .blog-like-btn.pop .heart-icon { animation:heartPop 0.4s ease; }
+  .blog-like-btn .like-count { font-weight:500; }
+  @keyframes heartPop {
+    0% { transform:scale(1); }
+    50% { transform:scale(1.5); }
+    100% { transform:scale(1.15); }
+  }
+  .blog-like-btn.vibrate .heart-icon { animation:heartVibrate 0.3s ease-in-out infinite; }
+  @keyframes heartVibrate {
+    0%, 100% { transform:rotate(0deg); }
+    25% { transform:rotate(-6deg); }
+    75% { transform:rotate(6deg); }
+  }
+  .blog-share-btn {
+    display:flex; align-items:center; gap:0.5rem;
+    background:none; border:1px solid rgba(143,170,123,0.3); border-radius:30px;
+    padding:0.45rem 1rem; cursor:pointer; transition:all 0.3s;
+    font-family:var(--sans); font-size:0.88rem; color:#a8c494;
+  }
+  .blog-share-btn:hover { border-color:rgba(143,170,123,0.6); color:#c5deb5; background:rgba(143,170,123,0.08); }
+  .blog-share-btn svg { width:16px; height:16px; }
+  .blog-share-toast {
+    position:fixed; bottom:2rem; left:50%; transform:translateX(-50%) translateY(20px);
+    background:var(--bg-card); border:1px solid var(--accent-dim); border-radius:6px;
+    padding:0.7rem 1.2rem; font-size:0.85rem; color:var(--accent-bright);
+    opacity:0; transition:all 0.3s; pointer-events:none; z-index:3000;
+    box-shadow:0 4px 20px rgba(0,0,0,0.4);
+  }
+  .blog-share-toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
+  .blog-card-likes {
+    display:flex; align-items:center; gap:0.3rem;
+    font-size:0.78rem; color:var(--text-muted); margin-top:0.4rem;
+  }
+  .blog-card-likes svg { width:12px; height:12px; fill:#e06060; }
+
   /* ===== PHOTOGRAPHY PAGE ===== */
   .photo-content {
     max-width:1000px; margin:0 auto;
     padding: clamp(2rem,5vw,4rem) clamp(1.5rem,5vw,4rem);
   }
   .photo-intro {
-    font-size:1.02rem; color:var(--text-secondary); line-height:1.8; margin-bottom:2.5rem;
+    font-size:1.08rem; color:var(--text-secondary); line-height:1.8; margin-bottom:2.5rem;
   }
   .photo-intro a { color:var(--accent); text-decoration:none; }
   .photo-intro a:hover { color:var(--accent-bright); text-decoration:underline; }
@@ -613,7 +774,7 @@
     color:var(--white); margin-bottom:0.6rem;
   }
   .copyright-text p {
-    font-size:0.92rem; color:var(--text-secondary); line-height:1.7;
+    font-size:1.0rem; color:var(--text-secondary); line-height:1.7;
   }
 
   /* Lightbox */
@@ -700,6 +861,7 @@
     <a onclick="switchPage('research')" data-page="research" data-i18n="nav_research">Research</a>
     <a onclick="switchPage('teaching')" data-page="teaching" data-i18n="nav_teaching">Teaching</a>
     <a onclick="switchPage('resources')" data-page="resources" data-i18n="nav_resources">Resources</a>
+    <a onclick="switchPage('blog')" data-page="blog" data-i18n="nav_blog">Blog</a>
     <a onclick="switchPage('photography')" data-page="photography" data-i18n="nav_photography">Photography</a>
   </div>
   <div class="nav-toggles">
@@ -761,23 +923,23 @@
           <h4 style="font-family:var(--serif); font-size:1.15rem; font-weight:500; color:var(--white); margin-bottom:1rem;"data-i18n="acad_bg">Academic Background</h4>
           <div style="display:flex; flex-direction:column; gap:0.8rem;">
             <div style="padding-left:1rem; border-left:3px solid var(--accent-dim);">
-              <div style="font-size:0.95rem; font-weight:500; color:var(--text-primary);" data-i18n="deg_phd">Ph.D. in Ecology and Evolutionary Biology</div>
-              <div style="font-size:0.88rem; color:var(--text-secondary);" data-i18n="school_pu">Princeton University, United States</div>
+              <div style="font-size:1.02rem; font-weight:500; color:var(--text-primary);" data-i18n="deg_phd">Ph.D. in Ecology and Evolutionary Biology</div>
+              <div style="font-size:0.95rem; color:var(--text-secondary);" data-i18n="school_pu">Princeton University, United States</div>
               <div style="font-size:0.78rem; color:var(--accent); letter-spacing:0.05em;">2024 – Present</div>
             </div>
 			<div style="padding-left:1rem; border-left:3px solid var(--accent-dim);">
-              <div style="font-size:0.95rem; font-weight:500; color:var(--text-primary);" data-i18n="deg_msc_pu">MSc. in Ecology & Evolutionary Biology (incidental)</div>
-              <div style="font-size:0.88rem; color:var(--text-secondary);" data-i18n="school_pu2">Princeton University, United States</div>
+              <div style="font-size:1.02rem; font-weight:500; color:var(--text-primary);" data-i18n="deg_msc_pu">MSc. in Ecology & Evolutionary Biology (incidental)</div>
+              <div style="font-size:0.95rem; color:var(--text-secondary);" data-i18n="school_pu2">Princeton University, United States</div>
               <div style="font-size:0.78rem; color:var(--accent); letter-spacing:0.05em;">2024 – 2026</div>
             </div>
             <div style="padding-left:1rem; border-left:3px solid var(--accent-dim);">
-              <div style="font-size:0.95rem; font-weight:500; color:var(--text-primary);" data-i18n="deg_msc">MSc. in Biological Sciences</div>
-              <div style="font-size:0.88rem; color:var(--text-secondary);" data-i18n="school_unam">National Autonomous University of Mexico, Mexico</div>
+              <div style="font-size:1.02rem; font-weight:500; color:var(--text-primary);" data-i18n="deg_msc">MSc. in Biological Sciences</div>
+              <div style="font-size:0.95rem; color:var(--text-secondary);" data-i18n="school_unam">National Autonomous University of Mexico, Mexico</div>
               <div style="font-size:0.78rem; color:var(--accent); letter-spacing:0.05em;">2021 – 2023</div>
             </div>
             <div style="padding-left:1rem; border-left:3px solid var(--accent-dim);">
-              <div style="font-size:0.95rem; font-weight:500; color:var(--text-primary);" data-i18n="deg_bsc">BSc. in Biology</div>
-              <div style="font-size:0.88rem; color:var(--text-secondary);" data-i18n="school_udea">University of Antioquia, Colombia</div>
+              <div style="font-size:1.02rem; font-weight:500; color:var(--text-primary);" data-i18n="deg_bsc">BSc. in Biology</div>
+              <div style="font-size:0.95rem; color:var(--text-secondary);" data-i18n="school_udea">University of Antioquia, Colombia</div>
               <div style="font-size:0.78rem; color:var(--accent); letter-spacing:0.05em;">2012 – 2018</div>
             </div>
           </div>
@@ -1419,6 +1581,64 @@
   </div>
 </div>
 
+<!-- ==================== BLOG PAGE ==================== -->
+<div class="page" id="page-blog">
+  <section class="hero">
+    <div class="hero-image" style="background-image:url(images/banner/banner.jpg)">
+      <div class="hero-placeholder"></div>
+    </div>
+    <div class="hero-content">
+      <h1 data-i18n-html="hero_blog"><span class="hero-hl">Blog</span></h1>
+      <p data-i18n="hero_sub_blog">Thoughts on more than ecology and evolution</p>
+    </div>
+  </section>
+
+  <div class="blog-content">
+    <div class="section-label" data-i18n="blog_label">Blog</div>
+    <div class="section-title" style="margin-bottom:1rem;" data-i18n="blog_title">Posts</div>
+
+    <div id="blogSearchWrap" style="margin-bottom:1rem;">
+      <input type="text" class="filter-search" id="blogSearch" placeholder="Search posts..." data-i18n-placeholder="blog_search" oninput="renderBlogCards()" style="width:100%; border-color:rgba(143,170,123,0.18);">
+    </div>
+
+    <div class="blog-filters" id="blogFilters">
+      <button class="blog-filter-btn active" data-filter="all" onclick="filterBlog('all')" data-i18n="tut_filter_all">All</button>
+    </div>
+
+    <!-- Post list -->
+    <div class="blog-list">
+      <div class="blog-grid" id="blogGrid"></div>
+      <div class="blog-no-posts" id="noBlogPosts" data-i18n="no_blog_posts">No posts match the selected filters.</div>
+      <div class="blog-no-posts" id="blogLoading" style="display:block;" data-i18n="blog_loading">Loading posts...</div>
+    </div>
+
+    <!-- Post reader -->
+    <div class="blog-reader" id="blogReader">
+      <button class="blog-reader-back" onclick="closeBlogPost()">
+        <span>&#8592;</span> <span data-i18n="blog_back">Back to posts</span>
+      </button>
+      <div class="blog-reader-meta">
+        <div class="blog-reader-title" id="blogReaderTitle"></div>
+        <div class="blog-reader-date" id="blogReaderDate"></div>
+        <div class="blog-reader-tags" id="blogReaderTags"></div>
+      </div>
+      <div class="blog-reader-content" id="blogReaderContent"></div>
+      <div class="blog-like-section">
+        <span class="blog-like-text" data-i18n="blog_like_text">If you liked it, hit like and share</span>
+        <button class="blog-like-btn" id="blogLikeBtn" onclick="toggleLike()" onmouseenter="startVibrateTimer()" onmouseleave="clearVibrateTimer()">
+          <span class="heart-icon" id="heartIcon"><svg viewBox="0 0 512 512"><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg></span>
+          <span class="like-count" id="likeCount">0</span>
+        </button>
+        <button class="blog-share-btn" onclick="sharePost()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+          <span data-i18n="blog_share">Share</span>
+        </button>
+      </div>
+      <div class="blog-share-toast" id="shareToast" data-i18n="blog_link_copied">Link copied!</div>
+    </div>
+  </div>
+</div>
+
 <!-- ==================== PHOTOGRAPHY PAGE ==================== -->
 <div class="page" id="page-photography">
   <section class="hero">
@@ -1510,10 +1730,120 @@
   <p><span data-i18n="footer_credit">Built with the help of</span> <a href="https://claude.ai" target="_blank">Claude</a></p>
 </footer>
 
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
 // ===== SITE CONFIGURATION =====
 const SHOW_CV_BUTTON = false;  // Set to false to hide the Download CV button
 const ENABLE_LIGHTBOX = false; // Set to false to disable photo zoom/lightbox
+const SHOW_BLOG = true;        // Set to true to show the Blog section
+
+
+// ===== FIREBASE LIKES =====
+const firebaseConfig = {
+  apiKey: "AIzaSyDhJHxfQtXnSjXEE6mxwyWhcW3ThWS5rHg",
+  authDomain: "vasquez-restrepo-blog.firebaseapp.com",
+  databaseURL: "https://vasquez-restrepo-blog-default-rtdb.firebaseio.com/",
+  projectId: "vasquez-restrepo-blog",
+  storageBucket: "vasquez-restrepo-blog.firebasestorage.app",
+  messagingSenderId: "225455029815",
+  appId: "1:225455029815:web:335a75f26d849770ff49b2"
+};
+
+let firebaseReady = false;
+let currentPostId = null;
+let db = null;
+let vibrateTimeout = null;
+
+try {
+  firebase.initializeApp(firebaseConfig);
+  db = firebase.database();
+  firebaseReady = true;
+} catch(e) {
+  console.log('Firebase not configured yet');
+}
+
+const heartEmptySvg = '<svg viewBox="0 0 512 512"><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>';
+const heartFullSvg = '<svg viewBox="0 0 512 512"><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>';
+
+function getLikedPosts() {
+  try { return JSON.parse(localStorage.getItem('likedPosts') || '{}'); } catch(e) { return {}; }
+}
+
+function loadLikes(postId) {
+  currentPostId = postId;
+  const btn = document.getElementById('blogLikeBtn');
+  const countEl = document.getElementById('likeCount');
+  const heartEl = document.getElementById('heartIcon');
+  const liked = getLikedPosts()[postId];
+
+  btn.classList.toggle('liked', !!liked);
+  heartEl.innerHTML = liked ? heartFullSvg : heartEmptySvg;
+
+  if (firebaseReady) {
+    db.ref('likes/' + postId).on('value', snap => {
+      countEl.textContent = snap.val() || 0;
+    });
+  }
+}
+
+function toggleLike() {
+  if (!currentPostId || !firebaseReady) return;
+  clearVibrateTimer();
+  const btn = document.getElementById('blogLikeBtn');
+  btn.classList.remove('vibrate');
+
+  const likedPosts = getLikedPosts();
+  const heartEl = document.getElementById('heartIcon');
+  const alreadyLiked = likedPosts[currentPostId];
+
+  if (alreadyLiked) {
+    delete likedPosts[currentPostId];
+    db.ref('likes/' + currentPostId).transaction(val => Math.max((val || 0) - 1, 0));
+    btn.classList.remove('liked');
+    heartEl.innerHTML = heartEmptySvg;
+  } else {
+    likedPosts[currentPostId] = true;
+    db.ref('likes/' + currentPostId).transaction(val => (val || 0) + 1);
+    btn.classList.add('liked', 'pop');
+    heartEl.innerHTML = heartFullSvg;
+    setTimeout(() => btn.classList.remove('pop'), 400);
+  }
+  localStorage.setItem('likedPosts', JSON.stringify(likedPosts));
+}
+
+function getLikeCount(postId) {
+  return new Promise(resolve => {
+    if (!firebaseReady) return resolve(0);
+    db.ref('likes/' + postId).once('value', snap => resolve(snap.val() || 0));
+  });
+}
+
+// Vibrate after 3 seconds hover
+function startVibrateTimer() {
+  const btn = document.getElementById('blogLikeBtn');
+  if (btn.classList.contains('liked')) return;
+  vibrateTimeout = setTimeout(() => {
+    btn.classList.add('vibrate');
+  }, 3000);
+}
+function clearVibrateTimer() {
+  clearTimeout(vibrateTimeout);
+  const btn = document.getElementById('blogLikeBtn');
+  btn.classList.remove('vibrate');
+}
+
+// Share post
+function sharePost() {
+  if (!currentPostId) return;
+  const url = window.location.origin + window.location.pathname + '#blog/' + currentPostId;
+  navigator.clipboard.writeText(url).then(() => {
+    const toast = document.getElementById('shareToast');
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 2500);
+  });
+}
 
 // Anti-spam email reveal
 function revealEmail(event) {
@@ -1529,6 +1859,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (cvBtn) cvBtn.style.display = SHOW_CV_BUTTON ? 'inline-flex' : 'none';
   const pe = document.getElementById('profileEmail');
   if (pe) { const a="princeton.edu", b="dvasquez"; pe.textContent = b+"@"+a; }
+  if (!SHOW_BLOG) {
+    const blogNav = document.querySelector('[data-page="blog"]');
+    if (blogNav) blogNav.style.display = 'none';
+  }
   if (!ENABLE_LIGHTBOX) {
     document.querySelectorAll('.carousel-slide').forEach(s => s.style.cursor = 'default');
   }
@@ -1551,6 +1885,8 @@ function switchPage(page) {
   const link = document.querySelector(`.nav-links a[data-page="${page}"]`);
   if (link) link.classList.add('active');
   document.getElementById('navLinks').classList.remove('open');
+  if (page !== 'blog' && window.location.hash) history.replaceState(null, '', window.location.pathname);
+  if (page === 'blog') closeBlogPost();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -1926,6 +2262,7 @@ const translations = {
   nav_research: { en:'Research', es:'Investigación' },
   nav_teaching: { en:'Teaching', es:'Docencia' },
   nav_resources: { en:'Resources', es:'Recursos' },
+  nav_blog: { en:'Blog', es:'Blog' },
   nav_photography: { en:'Photography', es:'Fotografía' },
 
   // Hero
@@ -1986,6 +2323,18 @@ const translations = {
   tut_iucn: { en:'IUCN Extinction Risk Assessment', es:'Evaluación del riesgo de extinción UICN' },
   tut_open_es: { en:'Open tutorial (ESP)', es:'Abrir tutorial (ESP)' },
   tut_open_en: { en:'Open tutorial (ENG)', es:'Abrir tutorial (ENG)' },
+
+  // Blog
+  blog_label: { en:'Blog', es:'Blog' },
+  blog_title: { en:'Posts', es:'Publicaciones' },
+  hero_sub_blog: { en:'Thoughts on more than ecology and evolution', es:'Reflexiones sobre más que ecología y evolución' },
+  blog_back: { en:'Back to posts', es:'Volver a publicaciones' },
+  no_blog_posts: { en:'No posts match the selected filters.', es:'Ninguna publicación coincide con los filtros seleccionados.' },
+  blog_loading: { en:'Loading posts...', es:'Cargando publicaciones...' },
+  blog_like_text: { en:'If you liked it, hit like and share', es:'Si te gustó dale like y comparte' },
+  blog_share: { en:'Share', es:'Compartir' },
+  blog_link_copied: { en:'Link copied!', es:'¡Enlace copiado!' },
+  blog_search: { en:'Search posts...', es:'Buscar publicaciones...' },
 
   // Photography
   photo_label: { en:'Photography', es:'Fotografía' },
@@ -2054,6 +2403,10 @@ const htmlTranslations = {
   hero_photo: {
     en: 'Photo<span class="hero-hl">graphy</span>',
     es: 'Foto<span class="hero-hl">grafía</span>'
+  },
+  hero_blog: {
+    en: '<span class="hero-hl">Blog</span>',
+    es: '<span class="hero-hl">Blog</span>'
   },
   bio_1: {
     en: 'Hello! My name is Daniel. I am a Colombian biologist interested in large-scale ecological and evolutionary processes. My research focuses on understanding the eco-evolutionary drivers that shape patterns of species diversity. I am also actively involved in the taxonomy and systematics of Neotropical reptiles, with a particular focus on snakes and gymnophthalmid lizards.',
@@ -2153,6 +2506,173 @@ function applyTranslations() {
 }
 
 // Restore saved language
+// ===== BLOG =====
+let blogPosts = [];
+let blogTagFilters = [];
+
+async function loadBlog() { /* returns promise */
+  const grid = document.getElementById('blogGrid');
+  const loading = document.getElementById('blogLoading');
+  const noResults = document.getElementById('noBlogPosts');
+
+  try {
+    const res = await fetch('blog/posts.json');
+    if (!res.ok) throw new Error('No posts.json');
+    blogPosts = await res.json();
+    blogPosts.sort((a, b) => b.date.localeCompare(a.date));
+
+    // Build tag filter buttons dynamically
+    const allTags = new Set();
+    blogPosts.forEach(p => (p.tags || []).forEach(t => allTags.add(t)));
+    const filtersDiv = document.getElementById('blogFilters');
+    allTags.forEach(tag => {
+      const btn = document.createElement('button');
+      btn.className = 'blog-filter-btn';
+      btn.dataset.filter = tag;
+      btn.textContent = '#' + tag;
+      btn.onclick = () => filterBlog(tag);
+      filtersDiv.appendChild(btn);
+    });
+
+    renderBlogCards();
+    if (loading) loading.style.display = 'none';
+  } catch (e) {
+    if (loading) loading.textContent = currentLang === 'es'
+      ? 'No hay publicaciones todavía.'
+      : 'No posts yet.';
+  }
+}
+
+function renderBlogCards() {
+  const grid = document.getElementById('blogGrid');
+  const noResults = document.getElementById('noBlogPosts');
+  const searchInput = document.getElementById('blogSearch');
+  const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+  grid.innerHTML = '';
+
+  const isAll = document.querySelector('.blog-filter-btn[data-filter="all"]')?.classList.contains('active');
+  const activeFilters = [...document.querySelectorAll('.blog-filter-btn.active:not([data-filter="all"])')].map(b => b.dataset.filter);
+
+  let count = 0;
+  blogPosts.forEach(post => {
+    const tags = post.tags || [];
+
+    // Tag filter
+    const tagMatch = isAll || activeFilters.length === 0 || tags.some(t => activeFilters.includes(t));
+    if (!tagMatch) return;
+
+    // Search filter
+    if (query) {
+      const text = (post.title + ' ' + (post.summary || '') + ' ' + tags.join(' ')).toLowerCase();
+      if (!text.includes(query)) return;
+    }
+
+    count++;
+
+    const card = document.createElement('div');
+    card.className = 'blog-card';
+    card.onclick = () => openBlogPost(post);
+    card.innerHTML = `
+      <div class="blog-card-body">
+        <div class="blog-card-date">${post.date}</div>
+        <div class="blog-card-title">${post.title}</div>
+        <div class="blog-card-summary">${post.summary || ''}</div>
+        <div style="display:flex; align-items:center; gap:1rem; flex-wrap:wrap;">
+          <div class="blog-card-tags">${tags.map(t => '<span class="blog-tag">#' + t + '</span>').join('')}</div>
+          <div class="blog-card-likes" id="card-likes-${post.id}"><svg viewBox="0 0 512 512"><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg> <span>0</span></div>
+        </div>
+      </div>
+      <div class="blog-card-arrow">&#8594;</div>
+    `;
+    grid.appendChild(card);
+
+    if (firebaseReady) {
+      getLikeCount(post.id).then(n => {
+        const el = document.getElementById('card-likes-' + post.id);
+        if (el) el.querySelector('span').textContent = n;
+      });
+    }
+  });
+
+  if (noResults) noResults.style.display = count === 0 ? 'block' : 'none';
+}
+
+function filterBlog(tag) {
+  document.querySelectorAll('.blog-filter-btn').forEach(btn => {
+    if (tag === 'all') {
+      btn.classList.toggle('active', btn.dataset.filter === 'all');
+    } else {
+      document.querySelector('.blog-filter-btn[data-filter="all"]').classList.remove('active');
+      if (btn.dataset.filter === tag) btn.classList.toggle('active');
+    }
+  });
+  const anyActive = document.querySelectorAll('.blog-filter-btn.active:not([data-filter="all"])');
+  if (anyActive.length === 0) {
+    document.querySelector('.blog-filter-btn[data-filter="all"]').classList.add('active');
+  }
+  renderBlogCards();
+}
+
+async function openBlogPost(post) {
+  const reader = document.getElementById('blogReader');
+  const list = document.querySelector('.blog-list');
+  const filters = document.getElementById('blogFilters');
+
+  document.getElementById('blogReaderTitle').textContent = post.title;
+  document.getElementById('blogReaderDate').textContent = post.date;
+  document.getElementById('blogReaderTags').innerHTML =
+    (post.tags || []).map(t => '<span class="blog-tag">#' + t + '</span>').join('');
+
+  try {
+    const res = await fetch('blog/' + post.id + '.md');
+    if (!res.ok) throw new Error('File not found');
+    const md = await res.text();
+    document.getElementById('blogReaderContent').innerHTML = marked.parse(md);
+  } catch (e) {
+    document.getElementById('blogReaderContent').innerHTML =
+      '<p style="color:var(--text-muted);">' +
+      (currentLang === 'es' ? 'No se pudo cargar el contenido.' : 'Could not load content.') +
+      '</p>';
+  }
+
+  list.style.display = 'none';
+  filters.style.display = 'none';
+  document.querySelector('.blog-content > div:first-of-type').style.display = 'none';
+  document.getElementById('blogSearchWrap').style.display = 'none';
+  document.querySelector('.blog-content .section-title').style.display = 'none';
+  reader.classList.add('active');
+  loadLikes(post.id);
+  window.location.hash = 'blog/' + post.id;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function closeBlogPost() {
+  document.getElementById('blogReader').classList.remove('active');
+  document.querySelector('.blog-list').style.display = 'block';
+  document.getElementById('blogFilters').style.display = 'flex';
+  document.querySelector('.blog-content > div:first-of-type').style.display = '';
+  document.getElementById('blogSearchWrap').style.display = '';
+  document.querySelector('.blog-content .section-title').style.display = '';
+  if (firebaseReady && currentPostId) db.ref('likes/' + currentPostId).off();
+  currentPostId = null;
+  window.location.hash = '';
+  renderBlogCards();
+}
+
+// Load blog on page ready
+loadBlog().then(() => {
+  // Deep link: open post if URL has #blog/post-id
+  const hash = window.location.hash;
+  if (hash.startsWith('#blog/')) {
+    const postId = hash.replace('#blog/', '');
+    const post = blogPosts.find(p => p.id === postId);
+    if (post) {
+      switchPage('blog');
+      setTimeout(() => openBlogPost(post), 300);
+    }
+  }
+});
+
 const savedLang = localStorage.getItem('lang');
 if (savedLang === 'es') { currentLang = 'en'; toggleLang(); } else { applyTranslations(); }
 </script>
